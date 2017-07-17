@@ -30,7 +30,8 @@ Bg4
 
 The source is the state of the board, and the target the movement a human would do in this situation.
 
-In this way the source vocabulary is just:
+´´´
+In this way the source vocabulary was:
 w
 /
 1
@@ -46,8 +47,10 @@ N
 B
 Q
 K
+´´´
 
-and the target vocabulary is:
+´´´
+and the target vocabulary:
 p
 r
 n
@@ -80,6 +83,7 @@ f
 g
 h
 =
+´´´
 
 # Results
 
