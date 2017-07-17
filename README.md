@@ -16,11 +16,11 @@ Sequence-to-sequence (seq2seq) models
 enjoyed great success in a variety of tasks such as machine translation, speech
 recognition, and text summarization.
 
-I've used the release of this seq2seq to show the power of this model. Using a vocabulary with just de numbers and letters
-(the symbols) used for the chess algebraic notation, I could learn a model to infer the movement I human would do given
+I've used the release of this seq2seq to show the power of the model. Using a vocabulary with just de numbers and letters
+(the symbols) used for the chess algebraic notation, I could learn a model to infer the movement a human would do given
 a table state.
 
-The supervised learning uses source-target of the form:
+The supervised learning uses then source-target pairs of the form:
 
 Source:
 rnq1kb1r/pp11ppp1/11p11n11/1111111p/11111111/11111NPb/PPPP1P1P/RNBQR1KB b
@@ -30,8 +30,8 @@ Bg4
 
 The source is the state of the board, and the target the movement a human would do in this situation.
 
-``` python
 In this way the source vocabulary was:
+``` python
 w
 /
 1
@@ -49,8 +49,8 @@ Q
 K
 ```
 
-``` python
 and the target vocabulary:
+``` python
 p
 r
 n
@@ -87,13 +87,13 @@ h
 
 # Results
 
-Using a NMT + GNMT attention (2 layers) I was able to reach a good result with:
+Using a NMT + GNMT attention (2 layers) the model was able to reach a good result with:
 
 eval dev: perplexity 2.83
 eval test: perplexity 3.07
 global training step 72100 lr 0.868126 step-time 0.51s wps 9.57K ppl 2.76 bleu 20.64
 
-This result means that, given a board state whatsoever, the model can predict in a seq2seq way a valid (and usually human)
+This means that, given a board state whatsoever, the model can predict in a seq2seq way a valid (and usually human)
 chess movement.
 
 
