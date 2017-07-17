@@ -30,7 +30,7 @@ Bg4
 
 The source is the state of the board, and the target the movement a human would do in this situation.
 
-´´´
+``` python
 In this way the source vocabulary was:
 w
 /
@@ -47,9 +47,9 @@ N
 B
 Q
 K
-´´´
+```
 
-´´´
+``` python
 and the target vocabulary:
 p
 r
@@ -83,7 +83,7 @@ f
 g
 h
 =
-´´´
+```
 
 # Results
 
