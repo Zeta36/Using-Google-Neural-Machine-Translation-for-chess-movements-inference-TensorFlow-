@@ -1,5 +1,5 @@
 
-# Using (Google) Neural Machine Translation for chess movements inference 
+# Using (Google) Neural Machine Translation for chess movements inference
 
 Somedays ago a free version of the source code of the GNMT (Google Neural Machine Translation) was release in: https://github.com/tensorflow/nmt
 by Thang Luong, Eugene Brevdo, Rui Zhao
@@ -22,14 +22,15 @@ a table state.
 
 The supervised learning uses source-target of the form:
 
-Source: rnq1kb1r/pp11ppp1/11p11n11/1111111p/11111111/11111NPb/PPPP1P1P/RNBQR1KB b
-Target: Bg4
+Source:
+rnq1kb1r/pp11ppp1/11p11n11/1111111p/11111111/11111NPb/PPPP1P1P/RNBQR1KB b
+
+Target:
+Bg4
 
 The source is the state of the board, and the target the movement a human would do in this situation.
 
 In this way the source vocabulary is just:
-<s>
-</s>
 w
 /
 1
@@ -47,8 +48,6 @@ Q
 K
 
 and the target vocabulary is:
-<s>
-</s>
 p
 r
 n
@@ -82,7 +81,7 @@ g
 h
 =
 
-***Results***.
+# Results
 
 Using a NMT + GNMT attention (2 layers) I was able to reach a good result with:
 
