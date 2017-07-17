@@ -1,5 +1,5 @@
 
-# Neural Machine Translation (seq2seq) Tutorial
+# Using (Google) Neural Machine Translation for chess movements inference 
 
 Somedays ago a free version of the source code of the GNMT (Google Neural Machine Translation) was release in: https://github.com/tensorflow/nmt
 by Thang Luong, Eugene Brevdo, Rui Zhao
